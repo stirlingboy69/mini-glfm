@@ -1977,7 +1977,7 @@ static bool glfm__getSystemWindowInsets(const GLFMDisplay *display, int *top, in
                                         int *bottom, int *left) {
     GLFMPlatformData *platformData = (GLFMPlatformData *)display->platformData;
     const int SDK_INT = platformData->activity->sdkVersion;
-    if (SDK_INT < 20) {
+    if (SDK_INT < 28) {
         return false;
     }
 
